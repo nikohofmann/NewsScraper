@@ -65,10 +65,8 @@ $(document).on("click", "button#addCommentButton", function() {
       method: "POST",
       url: "/articles/" + thisId,
       data: {
-        // Value taken from title input
-        title: $("#titleinput").val(),
         // Value taken from note textarea
-        body: $("#bodyinput").val()
+        body: $("#commentText").val()
       }
     })
       // With that done
